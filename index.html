@@ -172,14 +172,24 @@
         In figure 1 (Mind Your Decisions, 2016),  'd' is the distance between the middle of the needle
         and the closest parallel line; it also represents how close it is to intersect with a line. 
         It can be any number between 0 and 0.5 units (MSTE at the University of Illinois, n.d.).
-        This is because a matchstick is 1 unit long, so if 'd' is more than 0.5 units, 
-        it won't intersect with any lines no matter how it drops.The angle is in radians between the needle
-        and the parallel lines on the surface, where the needle is dropped with bounds between
-        0 &lt; θ &lt; π/2 as this restriction will allow the needle to intersect just one line (Mind Your Decisions, 2016).
+        This is because a matchstick is 1 unit long, so if 'd' is more than 0.5 units, it won't intersect 
+        with any lines no matter how it drops.The angle is in radians between the needle and the parallel lines 
+        on the surface, where the needle is dropped with bounds between 0 &lt; θ &lt; π/2 
+        as this restriction will allow the needle to intersect just one line (Mind Your Decisions, 2016).
 
         The vertical distance of the triangle (d2) in Figure 2 can be found by using basic trigonometry. 
         Then we need to work out the condition for the needle to cross the line, depending on the angle
         it makes from the locus of points.
+        
+        Opposite =  hypotenuse * sin
+        Vertical distance (d2) = 1/2 * sin(&theta;)
+        Now when calculating the probability of the needle, it needs to satisfy these conditions: 
+        0 &lt; θ &lt; π/2 and d &le; 1/2 * sin(&theta;). Then it can be found by finding the area 
+        under the curve defined by the function d &le; 1/2 * sin(&theta;) divided by the area of the 
+        rectangle as shown in figure 2 (MSTE at the University of Illinois, n.d.).
+        Probability = area under the graph/area of rectangle = A/B
+
+
         </pre>
     </p>
   
@@ -236,6 +246,11 @@
             text-align: center;
             font-weight: bold;
         }
+
+         /* Style for the side text */
+        .side-text {
+            margin: 20px; /* Add margin to create space */
+        }
     </style>
 </head>
 
@@ -247,11 +262,76 @@
         <img src="buffons-needle-graph.png" alt="Banner" width="500" height="300">
     </div>
 
+     <p class="ex3 side-text">
+      <pre>
+        <math>
+  <msubsup>
+    <mo>&int;</mo>
+    <mn>0</mn>
+    <mi>&pi;</mi>
+  </msubsup>
+  <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+  <mi>sin</mi>
+  <mo>(</mo>
+  <mi>&theta;</mi>
+  <mo>)</mo>
+  <mi>d</mi>
+  <mi>&theta;</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+</math>
 
- 
-  <p class="ex3">
-        Additional information or description can go here.
+        <math>
+  <mi>Area</mi>
+  <mi>of</mi>
+  <mi>rectangle</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>&pi;</mi>
+      <mo>/</mo>
+      <mn>2</mn>
+    </mrow>
+    <mn>2</mn>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mi>&pi;</mi>
+    <mn>4</mn>
+  </mfrac>
+</math>
+
+        <math>
+  <mfrac linethickness="0">
+    <mi>A</mi>
+    <mi>B</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+  <mo>&#xF7;</mo> <!-- Division sign -->
+  <mfrac>
+    <mi>&pi;</mi>
+    <mn>4</mn>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mn>2</mn>
+    <mi>&pi;</mi>
+  </mfrac>
+</math>
+
+        </pre>
     </p>
+
   
 <hr>
     <h3 id="Conclusion">Conclusion</h3>
