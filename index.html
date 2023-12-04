@@ -13,7 +13,7 @@
     
       <style>
         body {
-            background-color: #FFFFFF;
+           background: linear-gradient(to bottom, #00ccff 44%, #3333ff 86%);
             margin-left: 40px;
         }
         table {
@@ -30,8 +30,12 @@
         }
 
         tr:nth-child(even) {
-          background-color: #dddddd;
-        }
+        background-color: #dddddd; /* Set the default background color */
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ffffff; /* Set the background color for odd rows (white) */
+    }
 
     
         p.ex1, p.ex2, p.ex3 {
@@ -78,7 +82,7 @@
         }
 
         nav table {
-            width: 200px;
+            width: 10px;
         }
 
         nav td {
@@ -97,7 +101,6 @@
 </style>
  
 <body style="background-color:#FFFFFF;margin-left:40px;">
-
    <!--table of content-->
 
   <nav>
@@ -134,9 +137,17 @@
       This concept originated from Buffon's experimentation with a coin (Peterson, 2008), 
       evolving into a calculated experiment to determine the probability of a needle crossing two wooden strips on the floor.
       His findings led to the approximation of Pi and the formulation of a key probability expression 
-      for needle crossings: (2l) / πd (MSTE at the University of Illinois, n.d.).
+      for needle crossings: <math>
+  <mfrac linethickness="1">
+    <mrow>
+      <mn>2</mn>
+      <mi>l</mi>
+    </mrow>
+    <mi>&pi;d</mi>
+  </mfrac>
+</math> (MSTE at the University of Illinois, n.d.).
       Through his experiment it has demonstrated that the more needles thrown,
-      gives us a value closer to approximating the value of Pi
+      gives us a value closer to approximating the value of &pi;.
     </pre>
 </p>
  
@@ -230,7 +241,18 @@
         it makes from the locus of points.
         
         Opposite =  hypotenuse * sin
-        Vertical distance (d2) = 1/2 * sin(&theta;)
+        Vertical distance (d2) = <math>
+  <mfrac linethickness="1">
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+  <mo>&sdot;</mo> <!-- Multiplication sign -->
+  <mi>sin</mi>
+  <mo>(</mo>
+  <mi>&theta;</mi>
+  <mo>)</mo>
+</math>
+
         
         Now when calculating the probability of the needle, it needs to satisfy these conditions: 
         0 &lt; θ &lt; π/2 and d &le; 1/2 * sin(&theta;). 
@@ -238,7 +260,18 @@
         defined by the function d &le; 1/2 * sin(&theta;) divided by the area of the rectangle 
         as shown in figure 2 (MSTE at the University of Illinois, n.d.).
         
-        Probability = area under the graph/area of rectangle = A/B
+        Probability = <math>
+  <mfrac linethickness="1">
+    <mi>Area under the graph </mi>
+    <mi>Area of rectangle</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mn>A</mn>
+    <mn>B</mn>
+  </mfrac>
+</math>
+
 
 
         </pre>
@@ -358,10 +391,24 @@
         Then the approximation of pi is two times the total number of tosses () divided by 
         the total number of intersections (). 
         Then rearrange to get &pi:
-        π = 2 &times; the number of needles thrown (<code>x</code>) / the amount crossed the line (<code>n</code>). 
-          For example when <code>x</code> = 200 and <code>n</code> = 116:
-          π = 2 &times; 200/116
-          π &asymp; 3.44827586
+            
+            &pi; = <math>
+      <mfrac linethickness="1">
+        <mi>2(Number of needles thrown(x)) </mi>
+        <mi>Amount crossed the line(n)</mi>
+      </mfrac>
+    </math>
+
+            Example when <code>x</code> = 200 and <code>n</code> = 116:
+             <math>
+        <mi>&pi;</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>2*200</mi>
+          <mn>116</mn>
+        </mfrac>
+      </math>
+             π &asymp; 3.44827586
 
         This example demonstrates that a higher number of needles used, results in a closer 
         approximation value for Pi. Additionally, it demonstrates how ineffective it is because 
@@ -431,6 +478,37 @@
         </tr>
     </table>
 </div>
+
+<p class="ex3 side-text">
+      <pre>
+          Buffon's needle experiment had an impact on modern mathematics and has 
+          practical applications. This experiment not only established the 
+          groundwork for current advanced statistical techniques, but it has also 
+          had an impact on numerous fields, most notably Monte Carlo simulations. 
+          Monte Carlo simulations are widely used in computer science, physics, 
+          and finance thanks to Buffon's conceptual breakthrough (SoFi, 2023). 
+          The main idea of the experiment, which is still inspiring modern 
+          mathematicians, is the estimation of pi through random processes. 
+          In our highly technologically advanced era, their inventiveness has 
+          produced sophisticated algorithms that are important to 
+          numerical calculations. Similarly, Sir Isaac Newton saw a pattern while 
+          working through algebra, geometry, and calculus problems while developing 
+          a method for approximating pi. Newton did this without having any 
+          prior knowledge of binomial expansion (Veritasium, 2021). Using fractional 
+          powers to the binomial theorem, he noticed a coincidence in his series 
+          that looked like a formula for a circle's circumference. Newton developed 
+          the theory of fluxions, a method for figuring out the value of pi, in 
+          response to this observation (Veritasium, 2021). Buffon's experiment is 
+          not only useful for solving mathematical problems; it also serves as a 
+          historical record that emphasises the impact of curiosity on the evolution o
+          f mathematics and its implications for real-world problem solving. 
+          Our current understanding of pi and its practical applications, which 
+          reach fields like computer science, engineering, and physics that demand 
+          precision, is greatly influenced by the contributions of mathematicians 
+          from all historical eras and cultures.
+
+        </pre>
+</p>
 
 
 <hr>
