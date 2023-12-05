@@ -564,12 +564,13 @@ Mind Your Decisions. (2016) 'Buffon's Needle Problem (Sunday Puzzle)', Mind Your
                   document.getElementById('slide').scr = slideImages[currentSlide];
             }
               function nextSlide() {
-                  currentSlide = (currentSlide + 1) % slideImage.length;
+                  currentSlide = (currentSlide + 1) % slideImages.length;
                   showSlide();
             }
             function prevSlide() {
-                  currentSlide = (currentSlide - 1 + slideImage.length) % slideImage.length;
+                  currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
                   showSlide();
+              
        //Function to show a specific slide based on the button clicked
       function showSlideNumber(slideNumber) {
             currentSlide = slideNumber -1;
@@ -614,7 +615,7 @@ Mind Your Decisions. (2016) 'Buffon's Needle Problem (Sunday Puzzle)', Mind Your
                   bottom: 0;
                   left: 50%;
                   transform: translateX(-50%);
-                  margin-bottom: -100px; /* Add some margin between the image and buttons */
+                  margin-bottom: -150px; /* Add some margin between the image and buttons */
             }
 
             .button {
@@ -633,7 +634,7 @@ Mind Your Decisions. (2016) 'Buffon's Needle Problem (Sunday Puzzle)', Mind Your
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            margin-bottom: -50px; /* Add some margin between the slide number buttons and the image */
+            margin-bottom: -100px; /* Add some margin between the slide number buttons and the image */
             }
                  
        </style>
