@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
- 
+  <HEAD>
     <head>
       <img src ="WebBanner2023.png" alt="Banner" width ="900" height = "200">
       <h2>ENG0018 Computer Laboratory 2023/24</h2>
@@ -10,9 +10,8 @@
       <h2 style= "font-family:calibri:"><b>Buffon's Experiment: Paves the way for probability insights </b></h2>
       <hr>
     </head>
- <body>
-  <head>
-   <style>
+    
+      <style>
         body {
            background: linear-gradient(to bottom,#00ccff 62%, #0066ff 99%);
             margin-left: 40px;
@@ -81,7 +80,7 @@
         /* Style for the table of contents */
         nav.table-of-contents {
             margin-bottom: 20px;
-            margin-left: 0;
+            margin-left: 0 !important;
         }
 
         nav.table-of-contents table {
@@ -95,9 +94,7 @@
        
         
     </style>
-  </head>
-  
-
+  </HEAD>
  
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -140,7 +137,7 @@
   </hr>
  
   <p class="ex1">
-   
+    <pre>
       This concept originated from Buffon's experimentation with a coin (Peterson, 2008), evolving into a calculated to determine the probability of a needle crossing two wooden strips on the floor. His findings 
       led to the approximation of &pi; and the formulation of a key probability expression for needle crossings: 
       <math>
@@ -152,7 +149,7 @@
     <mi>&pi;d</mi>
   </mfrac>
 </math> (MSTE at the University of Illinois, n.d.).Through his experiment it has demonstrated that the more needles thrown, gives us a value closer to approximating &pi;.
-   
+    </pre>
 </p>
  
   <hr>
@@ -160,7 +157,7 @@
   </hr>
   
   <p class="ex2">
-    
+    <pre>
       
       In 1777, the French mathematician Georges Buffon unveiled his needle experiment,a unique approach to approximating &pi; by dropping needles onto a grid of parallel lines (Chudnovsky, 2017).Buffon's motivation
       stemmed from a profound curiosity about the intersection of mathematics and the physical world. His primary objectives were twofold: (Peterson, 2008) to empirically test mathematical principles in a 
@@ -168,7 +165,7 @@
       As he delved into this inquiry, Buffon expanded his investigation to calculate the probability of needles crossing the lines, leading to an exploration at the intersection of mathematics and probability theory.
       Thus, enabling him to derive an approximate value of &pi;.
     
-      
+      </pre>
   </p>
 
 
@@ -210,9 +207,11 @@
 
     <p class="ex3">
         <pre>
-        Buffon’s needle experiment introduces the <u> method for approximating the mathematical constant PI</u>.Firstly, just draw 3 horizontal lines on the paper using a needle, which means that the length of 
-        one needle is the same as the distance of the width of the parallel lines.Then you throw the needles randomly to see when it’ll cross the line. After this process we now calculate the probability of the 
-        needle that will intersect the nearest line.
+        Buffon’s needle experiment introduces the <u> method for approximating the mathematical constant PI</u>.
+        Firstly, just draw 3 horizontal lines on the paper using a needle, which means that the length of one needle 
+        is the same as the distance of the width of the parallel lines.Then you throw the needles randomly to see when 
+        it’ll cross the line. After this process we now calculate the probability of the needle that will intersect 
+        the nearest line.
         </pre>
     </p>
 
@@ -225,14 +224,17 @@
     </div>
 
     <p class="ex3 side-text">
-      
-        In figure 1 (Mind Your Decisions, 2016),  'd' is the distance between the middle of the needle and the closest parallel line; it also represents how close it is to intersect with a line. It can be 
-        any number between 0 and 0.5 units (MSTE at the University of Illinois, n.d.). This is because a needle is 1 unit long, so if 'd' is more than 0.5 units, it won't intersect with any lines no matter 
-        how it drops. The angle is in radians between the needle and the parallel lines on the surface, where the needle is dropped with bounds between 0 &lt; θ &lt; π/2 as this restriction will allow the 
-        needle to intersect just one line (Mind Your Decisions, 2016).
+      <pre>
+        In figure 1 (Mind Your Decisions, 2016),  'd' is the distance between the middle of the needle and the closest 
+        parallel line; it also represents how close it is to intersect with a line. It can be any number between 
+        0 and 0.5 units (MSTE at the University of Illinois, n.d.). This is because a needle is 1 unit long, 
+        so if 'd' is more than 0.5 units, it won't intersect with any lines no matter how it drops. The angle is in 
+        radians between the needle and the parallel lines on the surface, where the needle is dropped with bounds 
+        between 0 &lt; θ &lt; π/2 as this restriction will allow the needle to intersect just one line 
+        (Mind Your Decisions, 2016).
 
-        The vertical distance of the triangle (d2) in Figure 2 can be found by using basic trigonometry. Then we need to work out the condition for the needle to cross the line,depending on the angle it 
-        makes from the locus of points.
+        The vertical distance of the triangle (d2) in Figure 2 can be found by using basic trigonometry. Then we need to 
+        work out the condition for the needle to cross the line, depending on the angle it makes from the locus of points.
         
         Opposite =  hypotenuse * sin
         Vertical distance (d2) = <math>
@@ -247,8 +249,10 @@
             <mo>)</mo>
           </math>
         
-        Now when calculating the probability of the needle, it needs to satisfy these conditions: <u> 0 &lt; θ &lt; π/2 </u> and <u>d &le; 1/2 * sin(&theta;).</u> Then it can be found by finding the area 
-        under the curve defined by the function d &le; 1/2 * sin(&theta;) divided by the area of the rectangle as shown in figure 2 (MSTE at the University of Illinois, n.d.).
+        Now when calculating the probability of the needle, it needs to satisfy these conditions: <u> 0 &lt; θ &lt; π/2 </u>
+        and <u>d &le; 1/2 * sin(&theta;).</u> Then it can be found by finding the area under the curve defined by the function 
+        d &le; 1/2 * sin(&theta;) divided by the area of the rectangle as shown in figure 2 
+        (MSTE at the University of Illinois, n.d.).
         
         Probability = <math>
   <mfrac linethickness="1">
@@ -264,7 +268,7 @@
 
 
 
-       
+        </pre>
     </p>
 
 <head>
@@ -305,7 +309,7 @@
     </div>
 
      <p class="ex3 side-text">
-     
+      <pre>
         
         <math>
   <mi>Area under curve </mi>
@@ -378,7 +382,8 @@
   </mfrac>
 </math>
 
-        Then the approximation of pi is two times the total number of tosses () divided by the total number of intersections (). Then rearrange to get &pi:
+        Then the approximation of pi is two times the total number of tosses () divided by the total number of 
+        intersections (). Then rearrange to get &pi:
             
             &pi; = <math>
       <mfrac linethickness="1">
@@ -398,11 +403,12 @@
       </math>
              π &asymp; 3.44827586
 
-        This example demonstrates that <u>a higher number of needles used, results in a closer approximation value for &pi;.</u> Additionally, it demonstrates how <u>ineffective it is, because it only 
-        depends on the needles' randomness</u>. In order to produce more accurate results, a table has been created using data retrieved from an online Buffon's Needle simulator, as shown in Figure 3 
-        (Mind Your Decisions, 2016).
+        This example demonstrates that <u>a higher number of needles used, results in a closer approximation value for &pi;.</u>
+        Additionally, it demonstrates how <u>ineffective it is because it only depends on the needles' randomness</u>. 
+        In order to produce more accurate results, a table has been created using data retrieved from an online 
+        Buffon's Needle simulator, as shown in Figure 3 (Mind Your Decisions, 2016).
 
-        
+        </pre>
     </p>
 
 <html lang="en">
@@ -466,18 +472,25 @@
 </div>
 
 <p class="ex3 side-text">
-      
-          Buffon's needle experiment had an <u>impact on modern mathematics and has practical applications.</u> This experiment not only <u>established the groundwork for current advanced statistical techniques,
-          </u> but it has also had an impact on numerous fields, most notably Monte Carlo simulations. Monte Carlo simulations are widely used in computer science, physics, and finance thanks to Buffon's conceptual
-          breakthrough (SoFi, 2023).The main idea of the experiment, which is still inspiring modern mathematicians, is the estimation of &pi; through random processes.In our highly technologically advanced era, 
-          their inventiveness has produced sophisticated algorithms that are important to numerical calculations. Similarly, Sir Isaac Newton saw a pattern while working through algebra,geometry, and calculus 
-          problems while developing a method for approximating pi. Newton did this without having any prior knowledge of binomial expansion (Veritasium, 2021). Using fractional powers to the binomial theorem,
-          he noticed a coincidence in his seriesthat looked like a formula for a circle's circumference. Newton developed the theory of fluxions, a method for figuring out the value of pi, in response to this 
-          observation (Veritasium, 2021). Buffon's experiment is not only useful for solving mathematical problems; it also <u>serves as a historical record that emphasises the impact of curiosity on the evolution 
-          of mathematics</u> and its implications for real-world problem solving. Our current understanding of pi and its practical applications, which reach fields like computer science, engineering, and physics 
-          that demand precision, is greatly influenced by the contributions of mathematicians from all historical eras and cultures.
+      <pre>
+          Buffon's needle experiment had an <u>impact on modern mathematics and has practical applications.</u> This 
+          experiment not only <u>established the groundwork for current advanced statistical techniques,</u> but it has also had an 
+          impact on numerous fields, most notably Monte Carlo simulations. Monte Carlo simulations are widely used in computer 
+          science, physics, and finance thanks to Buffon's conceptual breakthrough (SoFi, 2023).The main idea of the 
+          experiment, which is still inspiring modern mathematicians, is the estimation of &pi; through random processes. 
+          In our highly technologically advanced era, their inventiveness has produced sophisticated algorithms that are 
+          important to numerical calculations. Similarly, Sir Isaac Newton saw a pattern while working through algebra, 
+          geometry, and calculus problems while developing a method for approximating pi. Newton did this without having any 
+          prior knowledge of binomial expansion (Veritasium, 2021). Using fractional powers to the binomial theorem, he 
+          noticed a coincidence in his seriesthat looked like a formula for a circle's circumference. Newton developed the 
+          theory of fluxions, a method for figuring out the value of pi, in response to this observation (Veritasium, 2021). 
+          Buffon's experiment is not only useful for solving mathematical problems; it also <u>serves as a historical record 
+          that emphasises the impact of curiosity on the evolution of mathematics</u> and its implications for real-world 
+          problem solving. Our current understanding of pi and its practical applications, which reach fields like computer 
+          science, engineering, and physics that demand precision, is greatly influenced by the contributions of 
+          mathematicians from all historical eras and cultures.
 
-       
+        </pre>
 </p>
 
 
@@ -486,13 +499,17 @@
   </hr>
  
 </p>
-   
-     Finally, Buffon's needle experiment exemplifies the power of curiosity in shaping mathematical discoveries. His original curiosity about the behaviour of a coin dropping across lines, Buffon investigated 
-     the chances of needles crossing parallel lines and discovered a revolutionary formula: (2l) / πd. This experiment-derived formula, which shows how randomness—as seen in needle crossings—contributes to the 
-     estimation of pi, has become the foundation of modern mathematical algorithms. Buffon's experiment also brings light on the mutually beneficial relationship between mathematical growth and curiosity, acting 
-     as a historical beacon outside the realm of mathematical abstractions. The experiment has a legacy that goes beyond mathematics and affects a variety of fields that depend on accurate computation, such as 
-     computer science, engineering, and physics. Essentially, Buffon's needle experiment, driven by his intellectual curiosity, has permanently changed the mathematical environment.
-    
+    <pre>
+     Finally, Buffon's needle experiment exemplifies the power of curiosity in shaping mathematical discoveries. 
+     His original curiosity about the behaviour of a coin dropping across lines, Buffon investigated the chances of 
+     needles crossing parallel lines and discovered a revolutionary formula: (2l) / πd. This experiment-derived formula, 
+     which shows how randomness—as seen in needle crossings—contributes to the estimation of pi, has become the foundation 
+     of modern mathematical algorithms. Buffon's experiment also brings light on the mutually beneficial relationship 
+     between mathematical growth and curiosity, acting as a historical beacon outside the realm of mathematical 
+     abstractions. The experiment has a legacy that goes beyond mathematics and affects a variety of fields that depend 
+     on accurate computation, such as computer science, engineering, and physics. Essentially, Buffon's needle experiment, 
+     driven by his intellectual curiosity, has permanently changed the mathematical environment.
+    </pre>
     </p>
 
 <hr>
@@ -500,35 +517,39 @@
   </hr>
  
 </p>
- <p class= "ex1">
-Chudnovsky, David V. (2017).<i>Science Friday </i>Available at : 
-<a https://www.sciencefriday.com/articles/estimate-pi-by-dropping-sticks/#:~:text=In%20the%2018th%20century%2C%20French,they%20will%20cross%20a%20line </a>
+    <pre>
+Chudnovsky, David V. (2017). “Estimate Pi by Dropping Sticks” Science Friday  
+Available at : 
+https://www.sciencefriday.com/articles/estimate-pi-by-dropping-sticks/#:~:text=In%20the%2018th%20century%2C%20French,
+      they%20will%20cross%20a%20line 
+      (Accessed on 19 October 2023)  
  
 Peterson, Ivars (2008). “How to calculate Pi: Buffon’s Needle – A Mini Primary Source project on Geometric Probability.” 
 Mathematical Association of America.
 Available at: 
-https://maa.org/press/periodicals/convergence/how-to-calculate-pi-buffons-needle-a-mini-primary-source-project-on-geometric-probability-for#:~:text=The%20basic%20idea%20comes%20from,probability%20is%20precisely%201%CF%80fffffffffffffffffffffffffffffffffffffffffff 
-
+https://maa.org/press/periodicals/convergence/how-to-calculate-pi-buffons-needle-a-mini-primary-source-project-on-
+      geometric-probability-for#:~:text=The%20basic%20idea%20comes%20from,probability%20is%20precisely%201%CF%80  
+      (Accessed on  19 2023)  
 
 MSTE at the University of Illinois. “Buffon’s Needle: An activity in Geometric Probability”
 Available at: 
       https://mste.illinois.edu/activity/buffon/ https://www.sciencefriday.com/articles/estimate-pi-by-dropping-sticks
       /#:~:text=In%20the%2018th%20century%2C%20French,they%20will%20cross%20a%20line  
-
+      (Accessed on 30 October 2023)    
 
 SoFi. “Monte Carlo Simulation: Definition & Examples”. 
       Available at: https://www.sofi.com/learn/content/monte-carlo-simulation/   
-
+      (Accessed on 30 October 2023)  
 
 Veritasium. (2021) “The Discovery that Transformed Pi”. 
       Available at: https://www.youtube.com/watch?v=gMlf1ELvRzc  
-
+      (Accessed on 3 November 2023)  
 
 Mind Your Decisions. (2016) 'Buffon's Needle Problem (Sunday Puzzle)', Mind Your Decisions, 
       Available at: https://mindyourdecisions.com/blog/2016/03/13/buffons-needle-problem-sunday-puzzle/ 
+      (Accessed: 3 November 2023). 
 
-
-
+    </pre>
     </p>
   <h2> Buffon's Experiment </h2>
       
@@ -685,9 +706,7 @@ Mind Your Decisions. (2016) 'Buffon's Needle Problem (Sunday Puzzle)', Mind Your
            
 
           </style>
- </body>
-    
-      
-
+</body>
 
             </html>
+
