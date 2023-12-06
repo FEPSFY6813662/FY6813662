@@ -12,6 +12,9 @@
     </head>
     
       <style>
+        * {
+          box-sizing: border-box;
+        }
         body {
            background: linear-gradient(to bottom,#66ffff 28%, #0099cc 100%);
             margin-left: 40px;
@@ -81,7 +84,7 @@
         nav.table-of-contents {
             margin-bottom: 20px;
             margin-left: 0 auto;
-            float: left;
+            
         }
 
         nav.table-of-contents table {
@@ -92,6 +95,35 @@
         nav.table-of-contents td {
             text-align: left;
             padding: 10px;
+        }
+        /* Create three unequal columns that floats next to each other */
+        .column {
+          float: left;
+          padding: 10px;
+        }
+        
+        /* Left and right column */
+        .column.side {
+          width: 25%;
+        }
+        
+        /* Middle column */
+        .column.middle {
+          width: 70%;
+        }
+        
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column.side, .column.middle {
+            width: 100%;
+          }
         }
        
         
@@ -107,7 +139,8 @@
 <body style="background-color:#FFFFFF;margin-left:40px;">
    <!--table of content-->
 
-
+<div class="row">
+  <div class="column side">
   
   <nav class = "table-of-contents">
     <table>
@@ -133,6 +166,14 @@
    
     </table>
   </nav>
+  </div>
+  
+  <div class="column middle">
+
+    <p></p>
+  </div>
+  
+</div>
 
   <hr>
     <h3 id="Abstract">Abstract</h3>
